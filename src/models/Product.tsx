@@ -1,10 +1,10 @@
 interface IProducts {
-    id: number;
-    ownerId: number; 
+    id: string;
+    ownerId: string; 
     title: string;
     imageUrl: string;
     description: string;
-    price: string
+    price: number
 }
 
 /**
@@ -12,14 +12,14 @@ interface IProducts {
  */
 class Product implements IProducts{
     
-    public id: number;
-    public ownerId: number; 
+    public id: string;
+    public ownerId: string; 
     public title: string;
     public imageUrl: string;
     public description: string;
-    public price: string;
+    public price: number;
 
-    constructor(id: number, ownerId: number, title: string, imageUrl: string, description: string, price: string) {
+    constructor(id: string, ownerId: string, title: string, imageUrl: string, description: string, price: number) {
         this.id = id;
         this.ownerId = ownerId;
         this.title = title;

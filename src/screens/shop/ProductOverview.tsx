@@ -3,7 +3,7 @@ import { FlatList } from 'react-native';
 
 const ProductOverviewScreen = () => {
 
-    return(<FlatList/>)
+    return <FlatList/>
 };
 
 export default ProductOverviewScreen;
