@@ -1,14 +1,21 @@
-import { createStackNavigator } from 'react-navigation-stack';
-import { createAppContainer } from 'react-navigation'
-import ProductsOverviewScreen from '../screens/shop/ProductOverview'
-import ProductOverview from '../screens/shop/ProductOverview';
+import { createStackNavigator } from "react-navigation-stack";
+import { createAppContainer } from "react-navigation";
+import ProductsOverviewScreen from "../screens/shop/ProductOverview";
+import Colors from "../constants/colors";
+import { Platform } from "react-native";
 
-const productsNavigator = createStackNavigator({
+const productsNavigator = createStackNavigator(
+  {
     ProductOverview: ProductsOverviewScreen,
-}, {
+  },
+  {
     defaultNavigationOptions: {
-        headerStyle: {
-            backgroundColor:
-        }
-    }
-})
+      headerStyle: {
+        backgroundColor: Platform.OS === "android" ? Colors.primary : "",
+      },
+      headerTintColor: Platform.OS === "android" ? "white" : Colors.primary,
+    },
+  }
+);
+
+export default createAppContainer(productsNavigator);
