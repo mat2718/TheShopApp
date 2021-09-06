@@ -1,4 +1,4 @@
-import PRODUCTS from "../../data/dummyData"; // set dummy data for initialState //! this will be over written once i incorporate axios :)
+import PRODUCTS from "../../data/DummyData"; // set dummy data for initialState //! this will be over written once i incorporate axios :)
 
 // initialState of products reducer
 const initialState = {

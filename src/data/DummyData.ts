@@ -1,7 +1,7 @@
 // this is just going to be used for practice data :)
 
 
-import Product from '../models/product';
+import Product from '../models/Product';
 
 const PRODUCTS = [
   new Product(
