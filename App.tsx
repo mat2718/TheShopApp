@@ -7,13 +7,13 @@ import productsReducer from "./src/store/reducers/Products";
 import ShopNavigator from "./src/navigation/ShopNavigator";
 import AppLoading from "expo-app-loading"; // installed using expo install rather than npm install
 import { useFonts } from "expo-font"; // installed using expo install rather than npm install
-import { composeWithDevTools } from 'redux-devtools-extension' //! remove prior to deployment
+import { composeWithDevTools } from "redux-devtools-extension"; //! remove prior to deployment
 
 export const rootReducer = combineReducers({
   products: productsReducer,
 });
 
-//! remove prior to depoyment
+//! remove prior to deployment
 const store = createStore(rootReducer, composeWithDevTools());
 
 export default function App() {
